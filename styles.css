@@ -1,0 +1,473 @@
+/* universal styling  */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    color: #555;
+}
+
+nav,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 125px 100px;
+}
+
+section h2.section-plan {
+    color: rgb(7, 6, 56);
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+
+}
+
+
+
+section h3.title {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    color: rgb(7, 6, 56);
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+section p {
+    max-width: 1100px;
+    text-align: center;
+    padding: 0px 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 40px;
+    line-height: 2;
+    color: black;
+    font-size: 18px;
+
+}
+
+hr {
+    width: 150px;
+    height: 2px;
+    background-color: #d70672;
+    margin-bottom: 50px;
+    border: none;
+}
+
+@media (max-width : 1000px) {
+    section {
+        padding: 100px 50px;
+    }
+}
+
+@media (max-width : 600px) {
+    section {
+        padding: 50px 30px;
+    }
+}
+
+/* universal styling */
+
+/* header styling */
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 35px 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(7, 6, 56);
+    position: fixed;
+    z-index: 1;
+}
+
+.header h3 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: fantasy;
+
+
+
+}
+
+.header nav {
+    display: flex;
+    font-size: larger;
+}
+
+.header nav li {
+    margin: 0px 15px;
+}
+
+.header nav li:first-child {
+    margin-left: 0px;
+}
+
+@media (max-width : 1000px) {
+    .header {
+        padding: 20px 50px;
+    }
+
+}
+
+@media (max-width : 700px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header h3 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+}
+
+/* header styling */
+
+/* hero styling starts*/
+.hero-section {
+    position: relative;
+    justify-content: center;
+    align-items: start;
+    min-height: 100vh;
+    color: black;
+}
+
+.hero-section .bg-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+.hero-section h1 {
+    margin-bottom: 15px;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(7, 6, 56);
+}
+
+.hero-section .browse-all-places-button {
+    font-size: 30px;
+    border-radius: 4px;
+    background-color: white;
+    color: blue;
+    padding: 20px 45px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+
+}
+
+.hero-section .browse-all-places-button:hover {
+    color: white;
+    background-color: blue;
+}
+
+@media (max-width:880) {
+    .hero-section h1 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width:800px) {
+    .hero-section {
+        min-height: 600px;
+    }
+
+    .hero-section h1 {
+        font-size: 35px;
+    }
+
+    .hero-section .browse-all-places-button {
+        padding: 15px 40px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width:550) {
+    .hero-section h1 {
+        font-size: 10px;
+    }
+
+    .hero-section .browse-all-places-button {
+        padding: 12px 30px;
+    }
+}
+
+
+
+/* hero styling ends*/
+
+/* our company progree section styling starts */
+
+.Our-company-progress .car-hauling-pics {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Our-company-progress .car-hauling-pics li {
+    height: 350px;
+    padding: 20px;
+    border-radius: 4px;
+    background-size: cover;
+    background-position: center;
+    background-color: #555;
+    background-clip: content-box;
+}
+
+.Our-company-progress .car-hauling-pics li.small-image {
+    flex-basis: 40%;
+}
+
+.Our-company-progress .car-hauling-pics li.large-iamge {
+    flex-basis: 60%;
+}
+
+/* our company progress section styling ends */
+
+/* about us styling section */
+.about-us {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 50px;
+}
+
+.about-us-text {
+    flex: 1;
+}
+
+.about-us-text h1 {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(7, 6, 56);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.about-us-text p {
+    font-size: 20px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    text-align: start;
+}
+
+.services {
+    align-items: start;
+    gap: 50px;
+    margin-bottom: 20px;
+
+}
+
+.services h3 {
+    color: rgb(7, 6, 56);
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.services p {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: start;
+
+
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 484px;
+    border-radius: 10px;
+    display: block;
+}
+
+/* about us styling section ends */
+
+/* section choose your plan styling starts */
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.plan {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 30px 20px;
+    width: 400px;
+    height: 450px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.plan h3 {
+    font-size: 24px;
+    font-weight: bolder;
+    color: rgb(2, 13, 73);
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: Arial, sans-serif;
+    color: blue;
+    margin-bottom: 25px;
+}
+
+.features {
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 0px;
+    list-style: none;
+}
+
+.features li {
+    margin: 20px 0px;
+    font-size: 20px;
+}
+
+.features li.strike {
+    text-decoration: line-through;
+    color: #bbb;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: blue;
+    background: #fff;
+    border: 1px solid blue;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    align-items: center;
+}
+
+.btn:hover {
+    background-color: blue;
+    color: white;
+}
+
+
+/* section choose your plan styling ends */
+
+/* section footer styling starts */
+.footer {
+    background-color: rgb(13, 18, 51);
+    color: #ffffff;
+    padding: 60px 60px;
+    font-family: 'Poppins', sans-serif;
+    height: 450px;
+    margin: auto;
+
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.footer-about,
+.footer-links,
+.footer-contact {
+    flex: 1 1 400px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.footer h3 {
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.footer-contact p {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-about p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: white;
+}
+
+.footer-about h2{
+    color: white;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.footer-links{
+    margin-left: 200px;
+}
+
+.footer-links ul li{
+    line-height: 2;
+}
+
+.bottom{
+    width: 800px;
+    height: 2px;
+    background-color: #d70672;
+    margin-bottom: 50px;
+    border: none;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 320px;
+}
+
+.footer-bottom{
+    font-size: 13px;
+    text-align: center;
+}
+
+
+/* section footer styling ends */
